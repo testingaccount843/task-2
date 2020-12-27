@@ -1,0 +1,76 @@
+C Language Notes
+# developed in 1972, Dennis, USA
+# major parts of windows, linux developed in C- fast, efficient, windows drivers written in C.
+# space and memory constraints - C works best. daily appliances use microprocessors(operating systems) that run programs written in C
+# many popular gaming frameworks have been written in C.
+# allows to closely interact with hardware devices.
+# C constants - primary(integer, real constant, character constant), secondary(Array, Pointer,Structure, Union, Enum)
+# 	integer range - -32768 to 32767 - 16-bit compiler turbo , turbo C ++ - max integer - 32767.
+# character can store no more than 1 byte.
+# real point constants are floating point constants- exponentional , fractional.+3.2e-5 mantissa part before e.
+# character constant is any single digit, alphabet or special character enclosed within single inverted commas.
+# Rules for constructing variable names:
+	-maximum limit of 31 characters or 247 characters.
+	-first character must be an underscore or alphabet
+	-no commas or special symbols other than underscore
+# 32 words in C reserved.
+# "//" used for single-line statement, /* */ multi-line statement.
+# printf function - %d for integer, %c for character, %f for float.
+# C instructions - Type declaration, arithmetic instruction and control instruction.
+	-Integer mode arithmetic, real mode arithmetic and mixed mode arithmetic
+	-execuetion- right hand side then assigned to left hand side
+	-% operator does not work on floats.
+	-expression type demoted according to variable type- int a =3.5 stores 3.
+	- arithmetic operators of equal precedence (left to right associavity), '=' (right to left associavity)
+	-Operators having equal precedence are evaluated using associativity.
+# non-zero values considered to be true.0 is considered to be False.	
+# && and || are binary operators, whereas, ! is a unary operator.
+# FUNCTIONS IN C - A function is a self-contained block of statements that perform a coherent task of some kind.
+# every c program contains atleast 1 function - main()drives all functions
+# The order in which the functions are defined in a program and the order in which they get called need not necessarily be same.
+# A function can be called from other function, but a function cannot be defined in another function.
+# Library functions Ex. printf( ), scanf( ). User-defined functions Ex. argentina( ), brazil( ) 
+# actual arguments - ones that are passed into a function.Formal arguments.order and type must be same.
+# Arguments  passed from right to left.
+# function can only return one value at a time.
+# prototypes of library fuctions in external files.
+# printf("%d , %d,%d" , i, j,)-> no variable matching with the last format specifier, hence garbage value returned.
+# Any C function by default returns an int value. More specifically, whenever a call is made to a function, the compiler assumes thatthis function would return a value of the type int.
+# function prototype declaration in the beginning of the program.
+# Call by value - values of variables passed.
+# Call by reference - address of variables passed.
+# '*' -> value and address operator and '&' -> address operator.
+# "%u" gor unsigned integer for address.
+# more than one return values - use call by reference.
+# recursive and normal fuctions use stack data structure.
+# short - atleast - 2 bytes, long - altleast 4 bytes , shorts < int and int < long.
+# 32-bit - provides 16-bit compatibility. 32-bit or 16th bit used to store sign of number. 1-ve, 0+ve.
+# 16-bit compiler -> 16-bit microprocessor.
+# long integers cause the program to run slow.short - save memory and efficient.
+# signed char - -127 to +127, unsigned - 0 to 255.
+# float - 4 bytes, double - 8 bytes , long double - 10 bytes. auto is the defaultstorage class.
+# 4 types of storage classes. auto, register, extern, static. control four variable properties.
+# preprocessor directives - macro expansion , file inclusion, conditional compilation.
+# macro expansion - constant variables, function # 
+# register - cpu , accessed faster, garbage value, local to block.
+# static - memory, initial 0, value exists between different function calls.
+# extern - scope global, initial 0.
+# generate expanded source code to see macro in action.
+# Arrays - subscripted variables , supposed to contain garbage values, if not initialised.
+# no array bounds checking.no error if you go beyond array size.
+# Addition of two pointers, multiplication or division with a constant not allowed.
+# two dimensional arrays - int arr[][] - rows, columns.
+# mentioning row dimension is optional, column dimension is must.
+# 3.0 == 3 -> true.
+# int i =65, char a = 'A'. IS a== i ->true.
+# It is necessary to declare the storage class of sum as static because it is within a recursive funtion. It is necessary to keep the value of 'num' same for all relevent
+  recursions of it. And to obtain running sum of all of them.
+# Whenever such a conflict arises, it is s the local variable that gets preference over the global variable.
+# In an array of structures, not only are all structures stored in contiguous memory locations, but the elements of
+   individual structures are also stored in contiguous locations.
+# strings - \0 is called null character. Note that  \0 and 0 are not same. ASCII value of \0 is 0,whereas ASCII value of ‘0’ is 48.   
+# use gets()AND puts()for string.
+# There is no keyword available in C for doing input/output.
+# All I/O in C is done using standard library functions.
+# The formatted console I/O functions can force the user to receive the input in a fixed format and display the output in a fixed format.
+# Unformatted console I/O functions work faster since they do not have the overheads of formatting the input or output.
